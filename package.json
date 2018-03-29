@@ -1,0 +1,46 @@
+{
+  "name": "react-baidumap",
+  "version": "0.0.0",
+  "description": "Display the location on Baidu map.",
+  "main": "./docs/index.js",
+  "scripts": {
+    "start": "npm run build && npm run dev",
+    "build": "npm run copyFiles && webpack --progress --profile --colors",
+    "dev": "webpack-dev-server -p --inline --hot",
+    "copyFiles": "rm -rf ./docs && mkdir ./docs && cp ./example/index.html ./docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruoru/react-baidumap.git"
+  },
+  "keywords": [
+    "react",
+    "baidu",
+    "map"
+  ],
+  "author": "ruoru",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ruoru/react-baidumap/issues"
+  },
+  "homepage": "https://github.com/ruoru/react-baidumap#readme",
+  "dependencies": {
+    "prop-types": "^15.6.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "html-webpack-plugin": "^3.1.0",
+    "style-loader": "^0.20.3",
+    "webpack": "^3.11.0",
+    "webpack-cli": "^2.0.13",
+    "webpack-dev-server": "^2.11.2"
+  }
+}
