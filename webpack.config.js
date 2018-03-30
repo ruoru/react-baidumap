@@ -24,10 +24,12 @@ module.exports = {
             //处理js文件
             {
                 test: /\.(js)$/,
-                loader: 'babel-loader',
                 exclude: [/node_modules/],  //不通过该babel处理，提高打包速度。
-                query: {
-                    presets: ['react', 'env'],    //指定最后一个版本
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['react', 'env']
+                    }
                 },
             },
             //处理css文件
