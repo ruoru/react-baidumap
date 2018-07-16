@@ -6,7 +6,7 @@ let baiduMap;
 
 function loadScript() {
   var script = document.createElement('script');
-  script.src = 'http://api.map.baidu.com/api?v=3.0&ak=NrTYvuK4VE8l4E7e7eTEtcOe&callback=initPoint';
+  script.src = 'https://api.map.baidu.com/api?v=3.0&ak=NrTYvuK4VE8l4E7e7eTEtcOe&callback=initPoint';
   document.body.appendChild(script);
 }
 
